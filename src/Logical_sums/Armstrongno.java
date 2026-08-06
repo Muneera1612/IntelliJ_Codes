@@ -15,16 +15,16 @@ public class Armstrongno {
             num/=10;
         }
         while(temp>0) {
-            int last = num % 10;
+            int last = temp % 10;
             int prod=1;
-            for (int i = 0; i <= count; i++) {
+            for (int i = 1; i <= count; i++) {
                 prod *= last;
             }
             sum += prod;
-            num /= 10;
+            temp /= 10;
         }
         if(og==sum){
-            System.out.println("Armstrong"+og);
+            System.out.println("Armstrong : "+og);
         }
         else {
             System.out.println("Not a Armstrong Number"+og);

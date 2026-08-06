@@ -37,11 +37,21 @@ class Bankclass {
     }
     public void withdraw(double wd){
         Balance=Balance-wd;
-        System.out.println(wd+"is withdraw from your account");
+        System.out.println(wd+" is withdraw from your account");
     }
     public void Deposit(double dp){
         Balance=Balance+dp;
-        System.out.println(dp+"Credit to your account");
+        System.out.println(dp+" Credited to your account");
+    }
+
+    static void main() {
+        Bankclass bc=new Bankclass(123,"muneera",998.45,"savnig");
+        bc.setAccountno(455);
+        bc.setBalance(1000.00);
+        bc.setHoldername("parveen");
+        bc.withdraw(654.34);
+        bc.Deposit(2500.98);
+
     }
 
 }

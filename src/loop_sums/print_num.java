@@ -51,13 +51,5 @@ public class print_num {
 //            }
 //        System.out.println(count);
 //        }
-///*
 //
-//    }
-//
-//
-//
-//}
-//
-//         */
     }

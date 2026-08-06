@@ -10,11 +10,11 @@ public class ValidParentheses {
             char ch = s.charAt(i);
             if (ch == '(' || ch == '[' || ch == '{') {
                 stack[++top] = ch;
-            } else {
+            }
+            else {
                 if (top == -1) {
                     System.out.println("false");
                 }
-
                 char open = stack[top--];
 
                 if (ch == ')' && open != '(')

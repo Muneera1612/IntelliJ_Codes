@@ -3,15 +3,33 @@ package Arrays;
 import java.util.Scanner;
 public class Majority_Element {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size:");
-        int size = sc.nextInt();
+        //Scanner sc = new Scanner(System.in);
+        //System.out.println("Enter the size:");
+        //int size = sc.nextInt();
         System.out.println("Enter the numbers:");
-        int[] arr = new int[size];
-        for (int i = 0; i < arr.length; i++) {
+        int[] arr = {1,2,3,2,4,2};
+        /*for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
+        }*/
+        int n=arr.length;
+        for(int i=0;i<n;i++){
+            int count=0;
+            for(int j=0;j<n;j++){
+                if(arr[i]==arr[j]){
+                    count++;
+                }
+            }
+            if(count>n/2){
+                System.out.println("Majority elemnt: "+arr[i]);
+                return;
+            }
         }
-        int count=0;
+        System.out.println("No majority elemnt");
+    }
+}
+
+
+/*int count=0;
         int candiate=0;
         for(int i=0;i<arr.length;i++){
             int num=arr[i];
@@ -24,19 +42,4 @@ public class Majority_Element {
             else{
                 count--;
             }
-        }
-        count = 0;
-        /*for (int num : nums) {
-            if (num == candidate) {
-                count++;
-            }
-        }
-
-        if (count > nums.length / 2) {
-            return candidate;
-        }
-
-        return -1;*/
-        System.out.println(candiate);
-    }
-}
+        }*/

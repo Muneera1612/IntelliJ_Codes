@@ -15,6 +15,12 @@ public class lastzero {
             arr[i]=sc.nextInt();
         }
         for(int i=0;i<arr.length;i++){
+            if(arr[i]==0){
+                result[j]=arr[i];
+                j++;
+            }
+        }
+        for(int i=0;i<arr.length;i++){
             if(arr[i]!=0){
                 result[j]=arr[i];
                 j++;

@@ -25,3 +25,11 @@ public class Max_Subarray {
         System.out.println("The maximum subarray is :"+maxSum);
     }
 }
+
+        /*int cs=arr[0];
+        int ms=arr[0];
+        for(int i=0;i<arr.length;i++){
+            cs=Math.max(arr[i],arr[i]+cs);
+            ms=Math.max(cs,ms);
+        }
+        System.out.println(ms);*/

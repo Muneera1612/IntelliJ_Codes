@@ -10,16 +10,16 @@ public class Valid_pallindrome {
                 result=result+str.charAt(i);
             }
         }
-        System.out.println(result);
-        result=result.toLowerCase();
-        System.out.println(result);
+        //System.out.println(result);
+        //result=result.toLowerCase();
+        System.out.println(result.toLowerCase());
 
         String temp="";
         for(int i=result.length()-1;i>=0;i--){
             temp+=result.charAt(i);
         }
         if(result.equals(temp)){
-            System.out.println("VAlid Pallindrome");
+            System.out.println("Valid Pallindrome");
             System.out.println("True");
         }
         else{

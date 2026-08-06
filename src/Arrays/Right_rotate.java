@@ -16,7 +16,6 @@ class Right_rotate {
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = sc.nextInt();
             }
-
             // Right rotate k times
             for (int i = 0; i < k; i++) {
 
