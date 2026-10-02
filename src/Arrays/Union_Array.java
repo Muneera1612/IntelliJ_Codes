@@ -14,28 +14,41 @@ public class Union_Array {
         }
         System.out.println("Enter the Second Array:");
         int [] arr2=new int[size1];
-        int [] union=new int [size+size1];
-        int j=0;
         for(int i=0;i<arr2.length;i++){
             arr2[i]=sc.nextInt();
         }
+        int [] union=new int [size+size1];
+        int u=0;
         for(int i=0;i<arr1.length;i++) {
-            union[j]=arr1[i];
-            j++;
+            union[u]=arr1[i];
+            u++;
         }
-        boolean found =false;
-        for(int k=0;k<size;k++){
-            if(arr2[k] == arr1[k]){
-                found = true;
-                break;
+        for(int i=0;i<arr2.length;i++){
+            boolean found=false;
+            for(int j=0;j<arr1.length;j++){
+                if(arr2[i]==arr1[j]){
+                        found=true;
+                        break;
+                }
+            }
+            if(!found){
+                union[u]=arr2[i];
+                u++;
             }
         }
-
-        if(!found){
-            union[j] = arr2[j];
-            j++;
+        int []intersection=new int[Math.min(size,size1)];
+        int k=0;
+        for(int i=0;i<size1;i++){
+            for(int j=0;j<size;j++){
+                if(arr2[i]==arr1[j]){
+                    intersection[k]=arr2[i];
+                    k++;
+                    break;
+                }
+            }
         }
         System.out.println(Arrays.toString(union));
+        System.out.println(Arrays.toString(intersection));
     }
 
 }

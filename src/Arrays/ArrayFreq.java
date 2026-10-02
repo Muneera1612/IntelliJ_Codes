@@ -1,10 +1,10 @@
 package Arrays;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class ArrayFreq {
     static void main() {
-        Scanner sc=new Scanner(System.in);
+       Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int []arr=new int[n];
         for(int i=0;i<n;i++){
@@ -26,3 +26,12 @@ public class ArrayFreq {
         }
     }
 }
+/*
+Scanner sc=new  Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+        System.out.println("Before swapping: "+ a +": "+b);
+a=a+b;
+b=a-b;
+a=a-b;
+        System.out.println("After swapping: "+ a +": "+b);*/

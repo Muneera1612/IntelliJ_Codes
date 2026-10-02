@@ -17,4 +17,4 @@ public class Lengthoflastword {
         }
         System.out.println(count);
     }
-    }
+}

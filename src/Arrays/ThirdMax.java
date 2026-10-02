@@ -24,7 +24,7 @@ public class ThirdMax {
                 thirdmax=secmax;
                 secmax=arr[i];
             }
-            else if(arr[i]>thirdmax && arr[i]!=secmax){
+            else if(arr[i]>thirdmax && arr[i]!=secmax  && arr[i]!=max){
                 thirdmax=arr[i];
             }
         }

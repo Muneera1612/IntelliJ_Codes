@@ -30,7 +30,7 @@ public class unionandIntersection {
             System.out.print(b[j]+" ");
             j++;
         }
-        i=0;
+        /*i=0;
         j=0;
         while(i<a.length && j<b.length){
             if(a[i]<b[j]){
@@ -42,7 +42,6 @@ public class unionandIntersection {
                 System.out.println(a[i]+" ");
                 i++;
                 j++;
-            }
-        }
+            }*/
     }
 }
